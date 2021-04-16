@@ -1,0 +1,31 @@
+:root{
+    --fontFamilyHeading: 'DM Serif Display', serif;
+    --fontFamilyBody: 'Karla', sans-serif;
+
+    --darkViolet-prim: hsl(256, 26%, 20%);
+    --grayishBlue-prim: hsl(216, 30%, 68%);
+
+    --veryDarkViolet-neutral: hsl(270, 9%, 17%);
+    --darkGrayishViolet-neutral: hsl(273, 4%, 51%);
+    --veryLightGray-neutral: hsl(0, 0%, 98%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--fontFamilyBody);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header{
+    font-family: var(--fontFamilyHeading);
+    font-weight: 400;
+}
+
+header h1, header h2{
+    font-weight: 400;
+}
