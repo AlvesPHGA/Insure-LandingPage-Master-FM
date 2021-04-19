@@ -8,17 +8,24 @@
     --veryDarkViolet-neutral: hsl(270, 9%, 17%);
     --darkGrayishViolet-neutral: hsl(273, 4%, 51%);
     --veryLightGray-neutral: hsl(0, 0%, 98%);
+
+    --white: #fff;
 }
 
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: var(--fontFamilyBody);
     font-size: 1rem;
     font-weight: 400;
+}
+
+a{
+    text-decoration: none;
 }
 
 header{
@@ -28,4 +35,47 @@ header{
 
 header h1, header h2{
     font-weight: 400;
+}
+
+button{
+    border: none;
+}
+
+#boxHeader, #boxNav button, #boxMain{
+    background-color: var(--white);
+}
+
+#boxNav button{
+    border: 1px solid var(--veryDarkViolet-neutral);
+    padding: 5px 15px;
+}
+
+#boxNav button, #boxTwo .format p, .links a{
+    color: var(--veryDarkViolet-neutral)
+}
+
+#boxOne{
+    background-color: var(--darkViolet-prim)
+}
+
+#boxOne .image01, #boxOne .image02{
+    display: none;
+}
+
+#boxFooter{
+    background-color: var(--veryLightGray-neutral);
+}
+
+.format-back, .format-back button{
+    background-color: var(--darkViolet-prim);
+    color: var(--white);
+}
+
+.format-back button{
+    border: 1px var(--white) solid;
+    padding: 5px 15px;
+}
+
+#boxNav a, .links header{
+    color: var(--darkGrayishViolet-neutral);
 }
